@@ -16,3 +16,15 @@ A mask ensemble network architecture
 ### Architecture
 
 ![MEnet](https://github.com/DongDong-Zoez/MEnet/blob/032ed91370759446f30d1a1a3395a427bc64965c/assest/architecture.png)
+
+### Loss function
+
+$$
+\begin{align}
+\text{Encoder Loss}:&\ \frac{1}{k}\sum_{i=1}^k D_1(E_i(x)) \\
+\text{Head Loss}:&\ D_2(H(x)) \\
+\text{Ensemble Loss}:&\ \frac{1}{2}[\frac{1}{k}\sum_{i=1}^k D_1(E_i(x))] + \frac{1}{2} D_2(H(x))
+\end{align}
+$$
+
+
