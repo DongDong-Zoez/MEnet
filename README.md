@@ -19,12 +19,12 @@ A mask ensemble network architecture
 
 ### Loss function
 
-$$
+$
 \begin{align}
 \text{Encoder Loss}:&\ \frac{1}{k}\sum_{i=1}^k D_1(E_i(x)) \\
 \text{Head Loss}:&\ D_2(H(x)) \\
 \text{Ensemble Loss}:&\ \frac{1}{2}[\frac{1}{k}\sum_{i=1}^k D_1(E_i(x))] + \frac{1}{2} D_2(H(x))
 \end{align}
-$$
+$
 
 
